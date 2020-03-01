@@ -262,7 +262,7 @@ def process_image(path, out_path):
 
     contours = find_components(edges)
     if len(contours) == 0:
-        print '%s -> (no text!)' % path
+        print '%s -> (no text!!)' % path
         return
 
     crop = find_optimal_components_subset(contours, edges)

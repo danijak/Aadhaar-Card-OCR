@@ -84,7 +84,7 @@ print (lines)
 
 for wordlist in lines.split('\n'):
 	xx = wordlist.split( )
-	if ([w for w in xx if re.search('(Year|Birth|irth|YoB|YOB:|DOB:|DOB)$', w)]):
+	if ([w for w in xx if re.search('(Year|Birth|Birth|YoB|YOB:|DOB:|DOB)$', w)]):
 		yearline = wordlist
 		break
 	else:
